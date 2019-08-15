@@ -168,11 +168,9 @@ def build_map():
             road_index += 1
 
     # Add the processing message to the String result to return
-    
     msg += "Processed {} Cities and {} Roads \n".format(city_index, road_index)
 
     # Build a road_map CityRoadMap graph object of the cities and roads
-    
     city_road_map = CityRoadMap(cities, roads)
 
     return city_road_map, msg
